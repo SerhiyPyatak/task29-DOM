@@ -21,12 +21,6 @@ body {
             cursor:				pointer;
         }
     }
-    &__modal{
-        &__content {
-            margin: 			15% auto; /* 15% from the top and centered */
-            width: 				80%; /* Could be more or less, depending on screen size */
-        }
-    }
 }
 
 label p {

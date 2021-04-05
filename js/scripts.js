@@ -69,7 +69,7 @@ function showModal() {
 	modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
-btn.onclick = function() {
+// When the user clicks on this button, close the modal
+function closeModal() {
 	modal.style.display = "none";
 }

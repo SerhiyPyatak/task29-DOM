@@ -15,6 +15,8 @@
 		background-color: 	#fefefe;
 		padding: 			20px;
 		border: 			1px solid #888;
+		margin: 			15% auto; /* 15% from the top and centered */
+        width: 				80%; /* Could be more or less, depending on screen size */
 	}
 
 	&__close {
