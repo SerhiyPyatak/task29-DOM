@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Model</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <h1>Тема 29: Document Object Model (DOM)</h1>
+    <form action="#" method="GET" class="taskform">
+      <fieldset class="taskform__taskunit" id="task1">
+        <legend>Задание №1</legend>
+        <p>Создать страницу, которая выводит нумерованный список песен</p>
+        <div class="buttonsblock">
+          <button onclick="getPlaylist()">Show Playlist</button>
+        </div>
+        <div class="taskform__playlist-block">
+          <ol class="taskform__songs-playlist" id="songs-playlist"></ol>
+        </div>
+      </fieldset>
+
+      <fieldset class="taskform__taskunit" id="task2">
+        <legend>Задание №2</legend>
+        <p>
+          Создать HTML-страницу с кнопкой "Открыть" и модальным окном. На
+          модальном окне должен быть текст и кнопка "Закрыть". Изначально
+          модальное окно не отображается. При клике на кнопку "Открыть"
+          появляется модальное окно, на кнопку "Закрыть" – исчезает.
+        </p>
+        <div id="myModal" class="taskform__modal modal">
+          <div class="modal__content">
+            <span class="modal__close">Close Me</span>
+            <p class="modal__text">
+              I'm an awesome modal window!!! Now you can close me...
+            </p>
+          </div>
+        </div>
+
+        <div class="buttonsblock">
+          <button id="modal-btn" onclick="showModal()">Show Modal</button>
+        </div>
+      </fieldset>
+      <fieldset class="taskform__taskunit" id="task3">
+        <legend>Задание №3</legend>
+        <p>
+          Создать HTML-страницу со светофором и кнопкой, которая переключает
+          светофор на следующий цвет.
+        </p>
+        <div class="buttonsblock">
+          <button onclick="initTime()">Initialize Time</button>
+          <button onclick="adjustSeconds()">Adjust Seconds</button>
+          <button onclick="adjustMinutes()">Adjust Minutes</button>
+          <button onclick="adjustHours()">Adjust Hours</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
