@@ -50,11 +50,13 @@
           Создать HTML-страницу со светофором и кнопкой, которая переключает
           светофор на следующий цвет.
         </p>
+        <div class="taskform__semaphore" id="semaphore">
+          <div class="taskform__semaphore_lamp" id="lamp0"></div>
+          <div class="taskform__semaphore_lamp" id="lamp1"></div>
+          <div class="taskform__semaphore_lamp" id="lamp2"></div>
+        </div>
         <div class="buttonsblock">
-          <button onclick="initTime()">Initialize Time</button>
-          <button onclick="adjustSeconds()">Adjust Seconds</button>
-          <button onclick="adjustMinutes()">Adjust Minutes</button>
-          <button onclick="adjustHours()">Adjust Hours</button>
+          <button onclick="switchSemaphore()">Switch Semaphore</button>
         </div>
       </fieldset>
     </form>

@@ -21,6 +21,23 @@ body {
             cursor:				pointer;
         }
     }
+
+    &__semaphore {
+        width:                      100px;
+        height:                     300px;
+        background-color:           #0b4951;
+        display:                    flex;
+        flex-direction:             column;
+        justify-content:            space-around;
+        align-items:                center;
+
+        &_lamp {
+            width:                  85px;
+            height:                 85px;
+            border-radius:          50%;
+            background-color:           silver;
+        }
+    }
 }
 
 label p {
