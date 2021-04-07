@@ -77,10 +77,16 @@ function closeModal() {
 //--------------- task 3 section -------------------------
 let semaphoreState = 0;
 const semaphoreLights = ['red', 'yellow', 'green'];
+let semaphoreDirection = 1;
 function switchSemaphore() {
 	for (let i = 0; i < 3; i++) {
 		document.getElementById(`lamp${i}`).style.backgroundColor = 'silver';
 	}
 	document.getElementById(`lamp${semaphoreState}`).style.backgroundColor = semaphoreLights[semaphoreState];
-	(semaphoreState + 1 < 3) ? semaphoreState++ : semaphoreState = 0;
+	if (semaphoreState === 2) {
+		semaphoreDirection = -1;
+	} else if (semaphoreState === 0) {
+		semaphoreDirection = 1;
+	}
+	semaphoreState += semaphoreDirection;
 }
